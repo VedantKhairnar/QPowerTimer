@@ -1,1 +1,3 @@
 # QPowerTimer
+
+ricardo waz hier
