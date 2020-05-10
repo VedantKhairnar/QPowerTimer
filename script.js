@@ -1,8 +1,8 @@
-const STEP_LENGTH = 1;
-const CELL_SIZE = 5;
+const STEP_LENGTH = 5;
+const CELL_SIZE = 1;
 const BORDER_WIDTH = 1;
 const MAX_FONT_SIZE = 500;
-const MAX_ELECTRONS = 10;
+const MAX_ELECTRONS = 1;
 const CELL_DISTANCE = CELL_SIZE + BORDER_WIDTH;
 
 // shorter for brighter paint
