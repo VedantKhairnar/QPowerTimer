@@ -883,7 +883,7 @@ function countdown(time) {
         seconds -= hrs * 3600;
         var mnts = Math.floor(seconds / 60);
         seconds -= mnts * 60;
-        var toShow = hrs + "H " + mnts + "M " + seconds + "S";
+        var toShow =  mnts + "M " + seconds + "S";
         arr2[i++] = toShow;
         console.log(toShow);
 
