@@ -24,15 +24,16 @@ table{
   position: fixed;
   left: 0px;
   top: 0px;
+
   padding-left: 10px;
   padding-top: 10px;
-
 }
 
 .qlogo{
   position: fixed;
   right: 0px;
   top: 0px;
+
   padding-right: 10px;
   padding-top: 10px;
 }
@@ -52,7 +53,7 @@ table{
   bottom: 0;
   width: 100%;
   background: #fff;
-  color: #222;
+  color: white;
   text-align: center;
   vertical-align: middle;
   line-height: normal;
@@ -61,6 +62,8 @@ table{
   font-style: italic;
   font-size: 20px auto;
 }
+
+
 
 ul li{
   display: inline;
