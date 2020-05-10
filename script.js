@@ -46,7 +46,7 @@ class FullscreenCanvas {
     constructor(disableScale = false) {
         const canvas = document.createElement('canvas');
         const context = canvas.getContext('2d');
-
+        canvas.style.zIndex=-1;
         this.canvas = canvas;
         this.context = context;
         this.disableScale = disableScale;
