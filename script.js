@@ -1,8 +1,8 @@
-const STEP_LENGTH = 1;
-const CELL_SIZE = 10;
+const STEP_LENGTH = 5;
+const CELL_SIZE = 3;
 const BORDER_WIDTH = 2;
 const MAX_FONT_SIZE = 500;
-const MAX_ELECTRONS = 100;
+const MAX_ELECTRONS = 5;
 const CELL_DISTANCE = CELL_SIZE + BORDER_WIDTH;
 
 // shorter for brighter paint
@@ -16,7 +16,7 @@ const BG_COLOR = '#1d2227';
 const BORDER_COLOR = '#13191f';
 const CELL_HIGHLIGHT = '#328bf6';
 const ELECTRON_COLOR = '#00b07c';
-const FONT_COLOR = '#ff5353';
+const FONT_COLOR = '#00b07c';
 
 const FONT_FAMILY = 'Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuan Yi Micro Hei", sans-serif';
 
@@ -46,7 +46,7 @@ class FullscreenCanvas {
     constructor(disableScale = false) {
         const canvas = document.createElement('canvas');
         const context = canvas.getContext('2d');
-
+        canvas.style.zIndex=-1;
         this.canvas = canvas;
         this.context = context;
         this.disableScale = disableScale;
@@ -883,7 +883,7 @@ function countdown(time) {
         seconds -= hrs * 3600;
         var mnts = Math.floor(seconds / 60);
         seconds -= mnts * 60;
-        var toShow = hrs + "H " + mnts + "M " + seconds + "S";
+        var toShow =  mnts + "M " + seconds + "S";
         arr2[i++] = toShow;
         console.log(toShow);
 
