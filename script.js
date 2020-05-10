@@ -913,12 +913,16 @@ function ring() {
     timer = setTimeout(ring, 16);
 }
 
-document.getElementById('input').addEventListener('keypress', ({
-    keyCode,
-    target
-}) => {
-    if (keyCode === 13) {
-        var d2 = new Date(2020, 4, 11, 21, 30, 0);
+
+    
+
+shape.init();
+shape.print('BBAE');
+
+// prevent zoom
+document.addEventListener('touchmove', e => e.preventDefault());
+
+var d2 = new Date(2020, 4, 11, 21, 30, 0);
         var currentTime = new Date();
         var d3 = Math.abs(d2 - currentTime) / 1000;
 
@@ -947,11 +951,3 @@ document.getElementById('input').addEventListener('keypress', ({
         //     default:
         //         return shape.print(value);
         // }
-    }
-});
-
-shape.init();
-shape.print('BBAE');
-
-// prevent zoom
-document.addEventListener('touchmove', e => e.preventDefault());
