@@ -4,7 +4,6 @@
 }
 
 body{
-  /* text-align: center; */
   background: #222222;
   font-family: sans-serif;
   font-weight: 100;
@@ -24,16 +23,15 @@ table{
   position: fixed;
   left: 0px;
   top: 0px;
-
   padding-left: 10px;
   padding-top: 10px;
+
 }
 
 .qlogo{
   position: fixed;
   right: 0px;
   top: 0px;
-
   padding-right: 10px;
   padding-top: 10px;
 }
@@ -53,7 +51,7 @@ table{
   bottom: 0;
   width: 100%;
   background: #fff;
-  color: white;
+  color: #222;
   text-align: center;
   vertical-align: middle;
   line-height: normal;
@@ -62,8 +60,6 @@ table{
   font-style: italic;
   font-size: 20px auto;
 }
-
-
 
 ul li{
   display: inline;
@@ -129,4 +125,76 @@ display: inline-block;
 .smalltext{
 padding-top: 5px;
 font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ct-footer {
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.ct-footer-list {
+  list-style: none;
+  text-align: center;
+  display: table;
+  width: 100%;
+}
+.ct-footer-list > li .ct-footer-list-header {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #101f47;
+  font-size: 20px;
+  margin: 0px;
+}
+
+/* Media Queries */
+
+@media (min-width:1200px) {
+  .ct-footer-list > li {
+    width: 20%;
+    display: table-cell;
+
+    vertical-align: middle;
+  }
+  .ct-footer-list > li:last-child {
+    width: 20%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .ct-footer-list > li {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .ct-footer-list > li {
+    width: 100%;
+  }
+}
+@media (min-width: 480px) and (max-width:767px) {
+  .ct-footer-list > li {
+    width: 50%;
+  }
 }

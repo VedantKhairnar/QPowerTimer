@@ -2,7 +2,7 @@ const STEP_LENGTH = 5;
 const CELL_SIZE = 3;
 const BORDER_WIDTH = 2;
 const MAX_FONT_SIZE = 500;
-const MAX_ELECTRONS = 10;
+const MAX_ELECTRONS = 5;
 const CELL_DISTANCE = CELL_SIZE + BORDER_WIDTH;
 
 // shorter for brighter paint
@@ -484,7 +484,7 @@ function handlePointer() {
 
         lastCell = [i, j];
 
-        return i === li && j === lj;
+        return i = li && j === lj;
     };
 
     function print(isMove, {
