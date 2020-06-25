@@ -2,7 +2,7 @@ const STEP_LENGTH = 5;
 const CELL_SIZE = 3;
 const BORDER_WIDTH = 2;
 const MAX_FONT_SIZE = 500;
-const MAX_ELECTRONS = 5;
+const MAX_ELECTRONS = 100;
 const CELL_DISTANCE = CELL_SIZE + BORDER_WIDTH;
 
 // shorter for brighter paint
@@ -883,7 +883,7 @@ function countdown(time) {
         seconds -= hrs * 3600;
         var mnts = Math.floor(seconds / 60);
         seconds -= mnts * 60;
-        var toShow =  mnts + "M " + seconds + "S";
+        var toShow =  hrs + "H "+mnts + "M " + seconds + "S";
         arr2[i++] = toShow;
         console.log(toShow);
 
