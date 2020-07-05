@@ -921,7 +921,7 @@ shape.print('BBAE');
 // prevent zoom
 document.addEventListener('touchmove', e => e.preventDefault());
 
-var d2 = new Date(2020, 6, 26, 20, 30, 0);
+var d2 = new Date(2020, 7, 5, 19, 15, 0);
 var currentTime = new Date();
 var d3 = Math.abs(d2 - currentTime) / 1000;
 
