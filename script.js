@@ -12,10 +12,10 @@ const CELL_REPAINT_INTERVAL = [
     500, // to
 ];
 
-const BG_COLOR = '#1d2227';
+const BG_COLOR = '#000';
 const BORDER_COLOR = '#13191f';
-const CELL_HIGHLIGHT = '#328bf6';
-const ELECTRON_COLOR = '#00b07c';
+const CELL_HIGHLIGHT = '#8a0303';
+const ELECTRON_COLOR = '#8a0303';
 const FONT_COLOR = '#00b07c';
 
 const FONT_FAMILY = 'Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuan Yi Micro Hei", sans-serif';
@@ -586,7 +586,7 @@ function prepaint() {
         height
     }) => {
         // composite with rgba(255,255,255,255) to clear trails
-        ctx.fillStyle = '#fff';
+        ctx.fillStyle = 'rgba(255,255,255,255)';
         ctx.fillRect(0, 0, width, height);
     });
     
@@ -921,7 +921,7 @@ shape.print('BBAE');
 // prevent zoom
 document.addEventListener('touchmove', e => e.preventDefault());
 
-var d2 = new Date(2020, 7, 5, 19, 15, 0);
+var d2 = new Date(2020, 8, 1, 15, 00, 0);
 var currentTime = new Date();
 var d3 = Math.abs(d2 - currentTime) / 1000;
 
